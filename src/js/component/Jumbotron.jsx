@@ -1,23 +1,13 @@
 import React from "react";
 
 export const Jumbotron = () => {
-    return {
-        < div className="p-5 text-center bg-body-tertiary rounded-3" >
-    <svg className="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
-    <h1 className="text-body-emphasis">Jumbotron with icon</h1>
-    <p className="col-lg-8 mx-auto fs-5 text-muted">
-      This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks to a responsive <code>.col-*</code> className, and a customized call to action.
-    </p>
-    <div className="d-inline-flex gap-2 mb-5">
-      <button className="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
-        Call to action
-        <svg className="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"></use></svg>
-      </button>
-      <button className="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
-        Secondary link
-      </button>
-    </div>
-  </div >
-    }
-    
+  return (
+      <div className="container text-align-left py-5 mt-1">
+        <div className="p-5 mb-4 rounded-3" style={{ backgroundColor: '#f0f0f0' }}>
+          <h1 className="display-5 fw-bold">Custom jumbotron</h1>
+          <p className="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+          <button className="btn btn-primary btn-lg" type="button">Example button</button>
+        </div>
+      </div>
+  )
 }
